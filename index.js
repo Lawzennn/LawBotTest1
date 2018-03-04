@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 
 
+bot.login(process.env.BOT_TOKEN);
+
 var bot = new Discord.Client();
 var prefix = ("/");
 
@@ -10,4 +12,4 @@ var prefix = ("/");
 });
 
 
-bot.login(process.env.BOT_TOKEN);
+
