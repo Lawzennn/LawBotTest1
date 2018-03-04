@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 
 var prefix = ".";
-var mention = "<@1930903359700619264>";
+var mention = "<@417382533685051394>";
 var memberCount = client.users.size;
 var servercount = client.guilds.size;
 
