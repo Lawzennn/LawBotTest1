@@ -1,8 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+bot.on('ready', () => {
+    bot.user.setPresence({ game: { name: 'LawBot(BETA)', type: 0} });
+    console.log("Je suis connecté !");
 });
 
 client.on('message', msg => {
