@@ -1,10 +1,13 @@
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-var prefix = "/";
+bot.login(process.env.BOT_TOKEN);
+
+var prefix = ".";
 var mention = "<@1930903359700619264>";
-var memberCount = Client.users.size;
-var servercount = Client.guilds.size;
+var memberCount = client.users.size;
+var servercount = client.guilds.size;
 
 client.on("ready", () => {
 	var servers = client.guilds.array().map(g => g.name).join(',');
@@ -28,5 +31,3 @@ client.on('message', message => {
 }
 });
 
-
-client.login(process.env.BOT_TOKEN);
